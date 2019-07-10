@@ -1,3 +1,5 @@
+--[[ FOR MINECRAFT v1.6.4 && CCTurtle v1.63 ]]--
+
 --[[insert this into code, not in the appropriate place
 	--gps, get the orientation, get the current coord on axis, an then return to that
 		start = gps.getCurrentCoord(orientationaxis)
