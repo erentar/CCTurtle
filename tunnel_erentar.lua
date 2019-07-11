@@ -1,5 +1,3 @@
---[[ FOR MINECRAFT v1.6.4 && CCTurtle v1.63 ]]--
-
 --[[insert this into code, not in the appropriate place
 	--gps, get the orientation, get the current coord on axis, an then return to that
 		start = gps.getCurrentCoord(orientationaxis)
@@ -173,6 +171,7 @@ for n=1,length do
 	tryDown()
 	tryDig()
 	turtle.turnLeft()
+	print(n)
 
 	--place torch every 10 blocks
 if math.fmod(n, 15) == 0 then
@@ -208,3 +207,4 @@ end
 		end
 	end
 end
+
