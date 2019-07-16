@@ -10,7 +10,15 @@ function autodetect
 	end
 end
 
-m.peripheral.wrap(autodetect())
+monitor = autodetect()
+
+--get argument(override monitor autodetect)
+local tArgs = {...}
+if #tArgs != 1 then
+	monitor = tArgs[1]
+end
+
+m.peripheral.wrap(monitor)
 
 --m = peripheral.wrap("top")
 
