@@ -1,5 +1,18 @@
 rednet.open("left")
-m = peripheral.wrap("top")
+
+function autodetect
+	sides = {"front","back","left","right","top","bottom"}
+	for i=1,6 do
+	testside = sides[i]
+		if peripheral.isPresent(testside)	--autodetect monitor
+			return testside
+		end
+	end
+end
+
+m.peripheral.wrap(autodetect())
+
+--m = peripheral.wrap("top")
 
 while true do
 	os.pullEvent("redstone")

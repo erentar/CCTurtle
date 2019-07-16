@@ -1,9 +1,8 @@
 rednet.open("right")
 id,message,protocol = rednet.receive()
 
-sides = {"front","back","left","right","top","bottom"}
-
 function autodetect
+	sides = {"front","back","left","right","top","bottom"}
 	for i=1,6 do
 	testside = sides[i]
 		if peripheral.isPresent(testside)	--autodetect monitor
