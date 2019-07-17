@@ -21,16 +21,6 @@ end
 
 m.peripheral.wrap(monitor)
 
---[[for i=1,6 do
-	testside = sides[i]
-	if peripheral.isPresent(testside)	--autodetect monitor
-		--monitor = testside
-		return 
-	end
-end
-	m = peripheral.wrap(monitor)
---]]
-
 while true do
 	os.pullEvent("redstone")
 
@@ -42,8 +32,8 @@ while true do
 		peripheral.call("top","write","open")
 
 	elseif message == "close" then
-		print("close")
 		redstone.setOutput("left",false)
+		print("close")
 		peripheral.call("top","clear")
 		m.setCursorPos(1,1)
 		peripheral.call("top","write","close")
