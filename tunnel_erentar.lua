@@ -201,7 +201,7 @@ end
 		tryDig()
 		turtle.forward()
 		turtle.turnLeft()
-		for n=1,length do
+		for i=1,(length+15) do
 		tryDig()
 		turtle.forward()
 		end
