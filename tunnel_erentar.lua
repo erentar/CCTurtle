@@ -201,7 +201,7 @@ end
 		tryDig()
 		turtle.forward()
 		turtle.turnLeft()
-		for i=1,(length+15) do
+		for i=1,(length+15) do -- +15 is because the turtles keep staying behind, i have no idea why
 		tryDig()
 		turtle.forward()
 		end
