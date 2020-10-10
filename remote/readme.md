@@ -16,3 +16,6 @@ keys:
 | r   | mine up      |
 | f   | mine down    |
 | g   | exit         |
+
+you can run `wget https://raw.githubusercontent.com/erentar/CCTurtle/master/remote/control.lua` on the pocket computer,<br>
+and `wget https://raw.githubusercontent.com/erentar/CCTurtle/master/remote/listen.lua` on the turtle to download the program on them
